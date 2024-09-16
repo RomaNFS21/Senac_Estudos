@@ -1,0 +1,70 @@
+O que é Python?
+R- é uma linguagem de programação 
+
+Por que Python é popular?
+R- Por ser simples e de fácil entendimento para o programador
+
+O que é IDE?
+R- É o ambiente de desenvolvimento pode dar suporte a uma ou varias linguagens de programação
+
+Variáveis e Operadores
+R- Variáveis são nomes que damos a algum espaço de memoria para receber algum valor
+Operadores são sinais que utilizamos para realizar alguma ação com as variáveis 
+
+
+Crie uma variável chamada idade e atribua a ela o valor 25.
+R- idade = 25
+
+Crie uma variável chamada nome e atribua a ela o valor "Maria".
+R- nome = "Maria"
+
+Imprima a mensagem: "Olá, Maria! Você tem 25 anos."
+R- print("Olá, ",nome,"! Você tem ",idade," anos.")
+
+Defina para que serve cada tipo de dados em Python?
+a) int  - Usada para declarar que uma variável somente aceita valores matemáticos inteiros 
+b) float - Usada para declarar que uma variável somente aceita valores reais
+c) str - Usada para declarar que uma variável somente aceita valores do tipo string(texto)
+d) bool - Usada para declarar que uma variável vai assumir um valor booleano ou seja verdadeiro ou falso
+
+Descreva as funcionalidades dos operadores em Python
+a) /  operador matemático de divisão
+b) *  operador matemático de multiplicação
+c) % operador matemático de divisão onde mostra como resultado o resto da divisão
+d) + operador matemático de soma
+e) – operador matemático de subtração
+
+Quais são os operadores relacionais?
+R- < , > , <= , >=, ==, !=
+
+Quais são os operadores lógicos?
+R- and, or e not
+
+O que é uma variável?
+R- Variáveis são nomes que damos a algum espaço de memoria para receber algum valor ou informação
+
+Como funciona o armazenamento dos valores em uma variável?
+R- Quando uma variável é declarada um espaço na memoria do computador acaba sendo reservado para receber valores nele seja nos mesmos declarando esse valor logo de inicio ou quando colocamos uma instrução de input para capturar o que o usuário informar e se essa informação não condiz com qual declaramos a variável ocorre o erro da informação não ser compatível com a variável
+
+O que é endereçamento de memória?
+R-É quando um espaço que esta livre na memoria é reservado e identificado com o nome da variável que declaramos no programa
+
+Descreva os conceitos aprendidos da linguagem portugol (Operadores relacionais, funções, 
+comandos, comentários e operadores lógicos)
+R- 
+Operadores Relacionais: <, >, <=, >=, ==, !=
+
+Funções: São um conjunto de instruções que podemos montar e quando for necessária a colocamos no código para ser usada, com o intuito de não ficar repetido instruções idênticas em varias partes do código
+
+Comandos: 
+Escreva()- para exibir informações para o usuário 
+Leia()- para captar informações do usuário
+Para() Para executar uma repetição do código dentro dele enquanto uma condição ainda fosse aceita
+Caso() Para que dependendo da condição o programa iria para um pedaço executar uma parte especifica para aquele caso
+
+Comentário: // para comentar uma linha ou /* */ para comentar um bloco
+
+Operadores lógicos: e , ou , não
+
+
+

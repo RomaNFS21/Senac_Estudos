@@ -1,0 +1,131 @@
+                        RELAÇÃO 1-N
+
+TABELA 1
+create table if not exists cursos(
+ID_Curso int not null auto_increment,
+Nome_Curso varchar(30) not null,
+Descricao_Curso varchar(50),
+Carga_Curso int(4),
+Total_Aulas_Curso int(2),
+Ano_Curso year,
+
+primary key (ID_Curso)
+);
+
+TABELA 2 QUE RECEBE A CHAVE ESTRANGEIRA
+create table if not exists aluno (
+ID_Aluno int not null auto_increment,
+Nome_Aluno varchar(60) not null,
+Profissao_Aluno varchar(20),
+Nascimento_Aluno date,
+Peso_Aluno decimal(5,2),
+Altura_Aluno decimal(3,2),
+Nacionalidade_Aluno varchar(20) default 'Brasil',
+ID_Curso int not null,
+
+primary key (ID_Aluno),
+foreign key (ID_Curso) references cursos (ID_Curso)
+);
+
+-------------------------------------------------------
+
+                RELAÇÃO N-N
+
+TABELA 1
+create table veterinario (
+CRMV_Veterinario int not null auto_increment,
+Nome_Veterinario varchar(60) not null,
+Data_Veterinario date,
+Salario_Veterinario float,
+
+primary key (CRMV_Veterinario)
+);
+
+TABELA 2
+create table animal (
+Codigo_Animal int not null auto_increment,
+Nome_Animal varchar(60) not null,
+Ano_Animal year,
+Raca_Animal varchar(60) not null,
+
+primary key (Codigo_Animal)
+)
+
+TABELA 3 COM AS CHAVES ESTRANGEIRAS
+
+create table consulta (
+ID_Consulta int not null auto_increment,
+Hora_Consulta time,
+Data_Consulta date,
+Motivo_Consulta varchar(60),
+
+CRMV_Veterinario int not null,
+Codigo_Animal int not null,
+
+primary key (ID_Consulta),
+foreign key (CRMV_Veterinario) references veterinario (CRMV_Veterinario),
+foreign key (Codigo_Animal) references animal (Codigo_Animal)
+);
+
+
+-------------------------------------------------
+
+CLIENTE
+Código
+Nome
+RG
+CPF
+Endereço
+Telefone
+
+
+CARRO
+Placa
+Código Renavan
+fabricante
+modelo
+ano
+
+HISTORICO
+Código Ocorrencia
+data
+local
+descricao
+
+create table cliente (
+Codigo_Cliente int not null auto_increment,
+Nome_Cliente varchar(60) not null,
+RG_Cliente varchar(20) not null,
+CPF_Cliente varchar(20) not null,
+Endereco_Cliente varchar(60) not null,
+Telefone_Cliente varchar(11) not null,
+
+
+primary key (Codigo_Cliente)
+)
+
+create table carro (
+Renavam_Carro int not null auto_increment,
+Placa_Carro varchar(7) not null,
+Fabricante_Carro varchar(20) not null,
+Modelo_Carro varchar(20) not null,
+Ano_Carro year not null,
+
+Codigo_Cliente int not null,
+
+primary key (Renavam_Carro), 
+foreign key (Codigo_Cliente) references cliente (Codigo_Cliente)
+)
+
+
+create table historico (
+Codigo_Historico int not null auto_increment,
+Data_Historico date not null,
+Local_Historico varchar(30) not null, 
+Descricao_Historico varchar(255) not null,
+
+Renavam_Carro int not null,
+
+primary key (Codigo_Historico),
+foreign key (Renavam_Carro) references carro (Renavam_Carro)
+)

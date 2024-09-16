@@ -1,0 +1,3 @@
+Python
+
+var1 = raw_input("Informe o valor: ")
