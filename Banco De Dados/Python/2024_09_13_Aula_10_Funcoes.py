@@ -55,7 +55,7 @@ multiplicar()
 divisão()
 '''
 ###################################
-
+'''
 acesso = "Global"
 
 def mudarAcesso():
@@ -64,3 +64,14 @@ def mudarAcesso():
 
 mudarAcesso()
 print("Acesso no exterior da função: ", acesso)
+'''
+#######################################
+'''
+def cadastrar(nome, idade, mensagem = "Dados com sucesso"):
+    print(nome, "Possui a idade de ", idade, "anos")
+    print(mensagem)
+
+cadastrar("Marilia", 18, "Parabéns")
+'''
+
+################################
