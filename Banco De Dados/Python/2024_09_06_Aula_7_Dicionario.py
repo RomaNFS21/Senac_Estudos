@@ -1,5 +1,5 @@
 pessoas = {
-            'nome':'carlos',
+           'nome':'carlos',
            'idade':25,
            'telefone':81818181,
            'email':'carlos@pe.com.br',
