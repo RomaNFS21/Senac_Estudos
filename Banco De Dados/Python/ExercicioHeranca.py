@@ -14,7 +14,7 @@ class Profressor(Pessoa):
         self.disciplina = disciplina
 
     def nome_professor(self):
-        return f"Nome do professor: {self.nome} \n Idade: {self.idade} \n CPF: {self.cpf} \n Telefone: {self.telefone} \n Email: {self.email} \n Disciplina: {self.disciplina}"
+        return f"Nome do professor(a): {self.nome} \n Idade: {self.idade} \n CPF: {self.cpf} \n Telefone: {self.telefone} \n Email: {self.email} \n Disciplina: {self.disciplina}"
 
 class Aluno(Pessoa):
 
@@ -23,4 +23,4 @@ class Aluno(Pessoa):
         self.escolaridade = escolaridade
 
     def nome_aluno(self):
-        return f"Nome do professor: {self.nome} \n Idade: {self.idade} \n CPF: {self.cpf} \n Telefone: {self.telefone} \n Email: {self.email} \n Escolaridade: {self.escolaridade}"
+        return f"Nome do Aluno(a): {self.nome} \n Idade: {self.idade} \n CPF: {self.cpf} \n Telefone: {self.telefone} \n Email: {self.email} \n Escolaridade: {self.escolaridade}"
