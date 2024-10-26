@@ -67,7 +67,7 @@ operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add,
 			'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul,
 			'DIVISION':div,'MOD':mod,'REMAINDER'
 			:mod,'MODULAS':mod}
-
+'''
 # commands
 commands={'NAME':myname,'EXIT':end,'END':end,'CLOSE':end}
 		
@@ -93,3 +93,4 @@ while True:
 					break
 	else:		 
 		sorry()
+'''

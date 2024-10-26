@@ -10,7 +10,7 @@ from smart_calc import myname
 from smart_calc import sorry
 from smart_calc import extract_from_text
 
-#
+
 def test_add():
   assert add(12,13) == 25
 
