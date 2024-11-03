@@ -20,6 +20,5 @@ def is_win(player, opponent):
         or (player == 'p' and opponent == 'r'):
         return True
 
-#call 
-print(play()) 
+#call print(play()) 
 # to run the game
