@@ -17,13 +17,13 @@ def test_is_win_paper_beats_rock():
 
 # Testes para condições de derrota
 def test_is_win_rock_loses_to_paper():
-    assert is_win('r', 'p') != False  # Pedra perde para papel
+    assert is_win('r', 'p') != True  # Pedra perde para papel
 
 def test_is_win_scissors_loses_to_rock():
-    assert is_win('s', 'r') != False  # Tesoura perde para pedra
+    assert is_win('s', 'r') != True  # Tesoura perde para pedra
 
 def test_is_win_paper_loses_to_scissors():
-    assert is_win('p', 's') != False  # Papel perde para tesoura
+    assert is_win('p', 's') != True  # Papel perde para tesoura
 
 # Testes para a função play
 

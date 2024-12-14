@@ -5,7 +5,7 @@ def play():
     computer = random.choice(['r', 'p', 's'])
 
     if user == computer:
-        return 'It\'s a tie'
+        return "It's a tie"
 
     # r > s, s > p, p > r
     if is_win(user, computer):
@@ -20,5 +20,7 @@ def is_win(player, opponent):
         or (player == 'p' and opponent == 'r'):
         return True
 
-#call print(play()) 
+#call 
+# print(play()) 
 # to run the game
+
